@@ -1,0 +1,31 @@
+<div class="header">
+  <h3>Podaj miasto</h3>
+  <input (click)='clear($event)' placeholder="Podaj miasto" class="input" type="text" [(ngModel)]="city"
+    (keydown)="add($event)">
+</div>
+<section class="show">
+  <div>
+    <h1 *ngIf="city">{{city | uppercase}}, {{country | uppercase}}</h1>
+  </div>
+  <div>
+    <h1 *ngIf="city">Godzina {{hour}}:{{minutes}}</h1>
+  </div>
+  <div>
+    <h1 class='temp'>{{temperature}} &#176;C</h1>
+  </div>
+  <div>
+    <img src={{src}} alt="">
+  </div>
+  <div>
+    <h4>wiatr</h4>
+    <p>{{wind}} km/h</p>
+  </div>
+  <div>
+    <h4>ciśnienie</h4>
+    <p>{{pressure}} hpa</p>
+  </div>
+  <div>
+    <h4>wilgotność</h4>
+    <p>{{humidity}} %</p>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<article class="container">
+  <h1>{{city | uppercase}}</h1>
+  <section class="days">
+    <div>
+      <h1>{{first | date: 'dd/MM/yyyy'}}</h1>
+      <img src={{day1Src}} alt="">
+      <h1 class='temp'>{{day1Temp}} &#176;C</h1>
+    </div>
+    <div>
+      <h1>{{second | date: 'dd/MM/yyyy'}}</h1>
+      <img src={{day2Src}} alt="">
+      <h1 class='temp'>{{day2Temp}} &#176;C</h1>
+    </div>
+    <div>
+      <h1>{{third | date: 'dd/MM/yyyy'}}</h1>
+      <img src={{day3Src}} alt="">
+      <h1 class='temp'>{{day3Temp}} &#176;C</h1>
+    </div>
+    <div>
+      <h1>{{fourth | date: 'dd/MM/yyyy'}}</h1>
+      <img src={{day4Src}} alt="">
+      <h1 class='temp'>{{day4Temp}} &#176;C</h1>
+    </div>
+    <div>
+      <h1>{{fifth | date: 'dd/MM/yyyy'}}</h1>
+      <img src={{day5Src}} alt="">
+      <h1 class='temp'>{{day5Temp}} &#176;C</h1>
+    </div>
+  </section>
+</article>

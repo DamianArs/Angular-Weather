@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #17223b;
+}
+
+header h1 {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 300%;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 18px
+}
+
+header h1::first-letter {
+  color: #ff6768;
+  font-size: 24px;
+}
+
+header h1 span {
+  color: #ff6768;
+  font-size: 24px;
+}
+
+header div img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.input {
+  text-transform: uppercase;
+}
+
+.routing {
+  background-color: #6b778d;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.routing a {
+  flex-basis: 40%;
+  display: block;
+  background-color: #263859;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+
+a.active {
+  background-color: #ff6768;
+}
+
+.header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header h3 {
+  color: #263859;
+  font-size: 12px;
+}
+
+.header input {
+  margin-left: 10px;
+  color: #17223b;
+  font-size: 12px;
+}
+
+section.show {
+  margin: 30px auto 0;
+  width: 90%;
+  height: 40vh;
+  background-image: url('assets/clouds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #17223b;
+}
+
+.show div {
+  flex-basis: 50%;
+}
+
+.show div h1 {
+  font-size: 16px;
+}
+
+.show div img {
+  margin-top: -30px;
+  width: 70%;
+  padding: 0;
+}
+
+.show div:nth-child(5),
+.show div:nth-child(6),
+.show div:nth-child(7) {
+  flex-basis: calc(100%/3);
+}
+
+.show h1.temp {
+  font-size: 32px;
+}
+
+div h4 {
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+div p {
+  font-size: 16px;
+}
+
+/* Days */
+section.days {
+  margin: 10px auto 0;
+  width: 90%;
+  height: 30vh;
+  background-image: url('assets/clouds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #17223b;
+}
+
+section.days div {
+  flex-basis: 20%;
+
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.container h1 {
+  margin-left: 10%;
+  color: #17223b;
+  font-size: 16px;
+}
+
+.container div h1 {
+  font-size: 8px;
+}
+
+.container .days {
+  display: flex;
+
+}
+
+.container .days div {
+  flex-basis: calc (100%/5);
+  flex-grow: 1;
+}
+
+.container h1.temp {
+
+  font-size: 16px;
+}
+
+.container div img {
+  width: 100%;
+  padding: 0;
+  margin-top: 30px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #6b778d;
+  color: white;
+  width: 100%;
+  line-height: 200%;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media(min-width: 411px) and (orientation: portrait) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .routing a {
+    font-size: 16px;
+  }
+
+  .header h3 {
+    font-size: 18px;
+  }
+
+  .header input {
+    font-size: 16px;
+  }
+
+  section.show {
+    margin: 50px auto 0;
+
+  }
+
+  .show div h1 {
+    font-size: 18px;
+  }
+
+  .show h1.temp {
+    font-size: 36px;
+  }
+
+  div h4 {
+    font-size: 14px;
+  }
+
+  div p {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .container div h1 {
+    font-size: 12px;
+  }
+
+  .container h1.temp {
+
+    font-size: 20px;
+  }
+}
+
+@media(min-width: 768px) and (orientation: portrait) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  header h1::first-letter {
+    color: #ff6768;
+    font-size: 40px;
+  }
+
+  header h1 span {
+    color: #ff6768;
+    font-size: 40px;
+  }
+
+  .routing a {
+    font-size: 24px;
+  }
+
+  .header h3 {
+    font-size: 26px;
+  }
+
+  .header input {
+    font-size: 24px;
+  }
+
+  section.show {
+    margin: 60px auto 0;
+
+  }
+
+  .show div h1 {
+    font-size: 26px;
+  }
+
+  .show h1.temp {
+    font-size: 58px;
+    margin-top: 50px;
+  }
+
+  div h4 {
+    font-size: 22px;
+  }
+
+  div p {
+    font-size: 28px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .container div h1 {
+    font-size: 18px;
+  }
+
+  .container h1.temp {
+
+    font-size: 32px;
+  }
+
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+  header h1 {
+    font-size: 48px;
+
+  }
+
+  header h1::first-letter {
+    font-size: 52px;
+  }
+
+  header h1 span {
+    font-size: 52px;
+  }
+
+  .routing a {
+    font-size: 32px;
+  }
+
+  .header h3 {
+    font-size: 34px;
+  }
+
+  .header input {
+    font-size: 32px;
+  }
+
+  section.show {
+    margin: 60px auto 0;
+
+  }
+
+  .show div h1 {
+    font-size: 34px;
+  }
+
+  .show h1.temp {
+    font-size: 62px;
+    margin-top: 75px;
+  }
+
+  div h4 {
+    font-size: 30px;
+  }
+
+  div p {
+    font-size: 36px;
+  }
+
+  footer {
+    font-size: 26px;
+  }
+
+  .container h1 {
+    font-size: 48px;
+  }
+
+  .container div h1 {
+    font-size: 30px;
+  }
+
+  .container h1.temp {
+
+    font-size: 42px;
+  }
+
+}
+
+@media(orientation: landscape) {
+  header div img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  footer {
+    position: relative;
+    font-size: 9px;
+  }
+
+  section.show {
+    margin: 30px auto;
+    height: 60vh;
+  }
+
+  .show h1.temp {
+    margin-top: 30px;
+  }
+
+  section.days {
+    height: 60vh;
+    margin: 20px auto;
+  }
+
+  .container div h1 {
+    font-size: 12px;
+  }
+}
+
+
+@media(min-width: 812px) and (orientation:landscape) {
+  .show h1.temp {
+    margin-top: 55px;
+    font-size: 46px;
+  }
+
+  section.show {
+    height: 75vh;
+  }
+
+  div h4 {
+    font-size: 16px;
+  }
+
+  div p {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .header h3 {
+    font-size: 16px;
+  }
+
+  .header input {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 1024px) and (orientation:landscape) {
+  .wrapper {
+    min-height: 100vh;
+  }
+
+  header h1 {
+    font-size: 42px;
+
+  }
+
+  header h1::first-letter {
+    font-size: 48px;
+  }
+
+  header h1 span {
+    font-size: 48px;
+  }
+
+  header div img {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .routing a {
+    font-size: 18px;
+  }
+
+  .header h3 {
+    font-size: 24px;
+  }
+
+  .header input {
+    font-size: 22px;
+  }
+
+  section.show {
+    height: 50vh;
+  }
+
+  .show div h1 {
+    font-size: 24px;
+  }
+
+  .show h1.temp {
+    font-size: 64px;
+    margin-top: 75px;
+  }
+
+  div h4 {
+    font-size: 20px;
+  }
+
+  div p {
+    font-size: 26px;
+  }
+
+  footer {
+    font-size: 17px;
+  }
+
+  section.days {
+    height: 40vh;
+    margin: 20px auto;
+  }
+
+  .container h1 {
+    font-size: 22px;
+  }
+
+  .container div h1 {
+    font-size: 22px;
+  }
+
+  .container h1.temp {
+    font-size: 32px;
+  }
+
+}
+
+@media(min-width: 1366px) and (orientation:landscape) {
+  header div img {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  section.show {
+    height: 60vh;
+  }
+
+  .show div img {
+    margin-top: -20px;
+    width: 250px;
+    padding: 0;
+  }
+
+  .show h1.temp {
+    font-size: 64px;
+    margin-top: 75px;
+  }
+
+  section.days {
+    height: 49vh;
+    margin: 20px auto;
+  }
+}
